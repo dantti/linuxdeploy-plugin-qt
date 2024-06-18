@@ -6,6 +6,10 @@ jobs:
   build-and-test:
     strategy:
       matrix:
+        ARCH: [x86_64]
+        USE_STATIC_RUNTIME: [""]
+        UPDATE: ["1"]
+        
         include:
           # regular builds:
           - ARCH: x86_64
